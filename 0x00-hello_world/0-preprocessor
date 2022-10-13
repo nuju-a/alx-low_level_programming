@@ -1,0 +1,2 @@
+#!/bin/bash
+$CFILE = gcc -E <filename> -o filename.c
