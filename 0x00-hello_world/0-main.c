@@ -6,6 +6,6 @@
 */
 int main(void)
 {
-	printf("tail c\n"); 
+	printf("tail c\n");
 	return (0);
 }
