@@ -9,10 +9,12 @@
   */
 int main(void)
 {
-	char ch;
+	char ch[] = "abcdefghijklmnopqrstuvwxyz";
+	int lenght = sizeof(ch) / sizeof(ch[0]);
+	int i;
 
-	for (ch = 'z'; ch <= 'a'; ch++)
-		putchar(ch);
+	for (i = 0; i < lenght; i--)
+		putchar(ch[i]);
 	putchar('\n');
 	return (0);
 }
