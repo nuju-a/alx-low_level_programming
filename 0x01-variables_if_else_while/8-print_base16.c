@@ -8,17 +8,16 @@
   */
 int main(void)
 {
-	int num;
+	char num;
 
-	for (num = 0; num <= 15; num++)
+	for (num = 48; num <= 102; num++)
 	{
-		if (num == 'A' || num == 'F')
-		{
-			num = num  | 0x20;
-		}
 		putchar(num);
+		if (num == 57)
+		{
+			num += 39;
+		}
 	}
 	putchar('\n');
 	return (0);
 }
-
