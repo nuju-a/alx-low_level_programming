@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 /**
   *main - Entry point
@@ -9,12 +9,10 @@
   */
 int main(void)
 {
-	char ch[] = "abcdefghijklmnopqrstuvwxyz";
-	int lenght = sizeof(ch) / sizeof(ch[0]);
-	int i;
+	char alpha;
 
-	for (i = 0; i < lenght; i--)
-		putchar(ch[i]);
+	for (alpha = 'z'; alpha >= 'a'; alpha--)
+		putchar(alpha);
 	putchar('\n');
 	return (0);
 }
