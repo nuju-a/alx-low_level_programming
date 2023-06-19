@@ -15,8 +15,8 @@ int main(void)
 		if (num == 'A' || num == 'F')
 		{
 			num = num  | 0x20;
-		putchar(num);
 		}
+		putchar(num);
 	}
 	putchar('\n');
 	return (0);
