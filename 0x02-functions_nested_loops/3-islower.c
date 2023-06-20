@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
-  *islower - Entry point
-  *Description: checks for lower case character
+  *_islower -  Entry point
+  *'c': checks for lower case character
   *Return: return 0
   */
 int _islower(int c)
@@ -17,6 +17,5 @@ int _islower(int c)
 	{
 		_putchar(0);
 	}
-	_putchar('\n');
 	return (0);
 }
