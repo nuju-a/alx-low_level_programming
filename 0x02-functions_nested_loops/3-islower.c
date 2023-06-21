@@ -11,13 +11,14 @@
   */
 int _islower(int c)
 {
-	if (c != 48)
+	if(c != 0)
 	{
-		_putchar(49);
+		_putchar(1);
 	}
 	else
 	{
-		_putchar(48);
+		_putchar(0);
+
 	}
 	return (0);
 }
