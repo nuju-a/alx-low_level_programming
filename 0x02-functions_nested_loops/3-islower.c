@@ -5,7 +5,7 @@
 /**
   *_islower -  Entry point
   *
-  *-c -  c takes on the value for lower case check is performed
+  *@c -  parameter  takes on the value for lower case check is performed
   *
   *Return: return 0
   */
