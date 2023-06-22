@@ -12,8 +12,8 @@ int mul(int a, int b)
 {
 	int result;
 
-	for (a = 0; a <= 9; a++)
-		for (b = 0; b <= 9; b++)
+	for (a = 48; a <= 97; a++)
+		for (b = 48; b <= 97; b++)
 			result = a * b;
 	_putchar(result + '0');
 	return (0);
