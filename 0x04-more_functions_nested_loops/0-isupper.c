@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
   *_isupper - Entry point
@@ -10,7 +11,7 @@ int _isupper(int c)
 {
 	int c;
 
-	if (isupper(c))
+	if (c >= 97 && c <= 122)
 	{
 		return (49);
 	}
