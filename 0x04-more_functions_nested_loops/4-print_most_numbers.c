@@ -14,10 +14,10 @@ void print_most_numbers(void)
 		if (a == 50)
 		{
 			continue;
-			if (a == 52)
-			{
-				continue;
-			}
+		}
+		else if (a == 52)
+		{
+			continue;
 		}
 		else
 		{
