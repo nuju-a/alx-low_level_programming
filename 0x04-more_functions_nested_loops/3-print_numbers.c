@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  *print_number - Entry point
+  *print_numbers - Entry point
   *
   *Return: 0
   */
@@ -12,6 +12,7 @@ void print_numbers(void)
 	while (a <= 57)
 	{
 		_putchar(a);
-		_putchar('\n');
+		a++;
 	}
+	_putchar('\n');
 }
