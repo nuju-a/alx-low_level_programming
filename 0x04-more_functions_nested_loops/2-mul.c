@@ -1,5 +1,4 @@
 #include "main.h"
-void _putchar(char c);
 
 /**
   *mul - Entry point
@@ -10,13 +9,10 @@ void _putchar(char c);
   */
 int mul(int a, int b)
 {
-	char c;
+	int result;
 
-	for (a = 48; a <= 97; a++)
-		for (b = 48; b <= 97; b++)
-		{
-			c = a * b;
-			_putchar(c + '0');
-		}
+	result = a * b;
+	_putchar(result);
+
 	return (0);
 }
