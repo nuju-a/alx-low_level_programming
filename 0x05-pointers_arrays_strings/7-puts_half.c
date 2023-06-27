@@ -8,9 +8,9 @@
   */
 void puts_half(char *str)
 {
-	unsigned long len = strlen(str);
-	unsigned long index;
-	unsigned long i;
+	unsigned int len = strlen(str);
+	unsigned int index;
+	unsigned int i;
 
 	while (str[len] != '\0')
 	{
