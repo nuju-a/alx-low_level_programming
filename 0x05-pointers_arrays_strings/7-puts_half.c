@@ -8,9 +8,14 @@
   */
 void puts_half(char *str)
 {
-	int len = strlen(str);
+	unsigned long len = strlen(str);
 	int index;
-	int i;
+	unsigned long i;
+
+	while (str[len] != '\0')
+	{
+		len++;
+	}
 
 	if (len % 2 == 0)
 	{
@@ -18,7 +23,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		index = (len - 1 / 2);
+		index = ((len - 1) / 2);
 	}
 	for (i = index; i < len; i++)
 	{
