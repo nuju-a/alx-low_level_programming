@@ -16,15 +16,19 @@ char *_strchr(char *s, char c)
 		/*return (NULL);*/
 	/*}*/
 
-	if (*s == '\0')
-	{
-		return (s);
-	}
+	/*if (*s == '\0')*/
+	/*{*/
+	/*	return (s);*/
+	/*}*/
 
 	for ( i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == c)
 			return (s + i);
 	}
-	return (NULL);
+if (*s == '\0')
+{
+	return (s);
+}
+return (NULL);
 }
