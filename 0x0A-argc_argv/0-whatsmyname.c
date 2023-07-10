@@ -3,7 +3,7 @@
 /**
   *main - Entry point
   *@argc: agrument count
-  *@agrv: agrument array
+  *@argv: agrument array
   *
   *Description - the string literal
   *Return: 0
