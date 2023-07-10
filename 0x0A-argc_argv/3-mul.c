@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			result = result * atoi(argv[i]);
+			result = result * strtol(argv[i], NULL, 10);
 		}
 		printf("%ld\n", result);
 	}
