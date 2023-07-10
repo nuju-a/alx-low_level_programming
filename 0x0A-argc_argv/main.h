@@ -4,5 +4,6 @@
 int _putchar( char c);
 #include <stdio.h>
 #include <stdlib.h>
+int _atoi(char *s);
 
 #endif
