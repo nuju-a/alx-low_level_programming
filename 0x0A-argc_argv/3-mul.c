@@ -9,16 +9,16 @@
   */
 int main(int argc, char *argv[])
 {
-	int result = 1;
+	long int result = 1;
 	int i;
 
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			result = result * atol(argv[i]);
+			result = result * atoi(argv[i]);
 		}
-		printf("%d\n", result);
+		printf("%ld\n", result);
 	}
 		else
 		{
