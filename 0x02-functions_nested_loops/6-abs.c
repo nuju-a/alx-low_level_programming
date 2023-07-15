@@ -3,7 +3,7 @@
 
 /**
   *_abs - Entry point
-  *@int: agrument
+  *@j: agrument
   *
   *Return: 0
   */
