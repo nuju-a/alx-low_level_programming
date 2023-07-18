@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <string.h>
 
 /**
   *init_dog - defines a user structure
@@ -11,16 +12,12 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	/*d = malloc(sizeof(struct dog));
+	d->name = malloc(strlen(name) + 1);
+	strcpy(d->name, name);
 
-	if (d == NULL)
-	{
-		printf("NULL\n");
-	}
-	return;*/
+	d->owner = malloc(strlen(owner) + 1);
+	strcpy(d->owner, owner);
 
-		d->name = name;
-		d->owner = owner;
-		d->age = age;
+	d->age = age;
 }
 
