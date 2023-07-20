@@ -16,7 +16,7 @@ void print_strings(const char *seperator, const unsigned int n, ...)
 
 	if (n == 0)
 	{
-		printf("nil\n");
+		printf("(nil)");
 		return;
 	}
 
