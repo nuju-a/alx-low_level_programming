@@ -25,19 +25,21 @@ void print_strings(const char *seperator, const unsigned int n, ...)
 	{
 		arg = va_arg(string, const char*);
 
-		if (n == 0)
+		if (arg == NULL)
 		{
 			printf("(nil)");
+			printf("\n");
 			return;
 		}
-		if (arg != NULL || arg[0] != '\0')
+		/*if (arg != NULL || arg[0] != '\0')*/
 		printf("%s", arg);
-			count++;
+			/*count++;*/
 
-			if (seperator != NULL && count < n)
+			if (seperator != NULL && count < (n - 1))
 			{
 				printf("%s", seperator);
 			}
+			count++;
 	}
 	printf("\n");
 	va_end(string);
