@@ -25,7 +25,7 @@ void print_strings(const char *seperator, const unsigned int n, ...)
 	{
 		arg = va_arg(string, const char*);
 
-		if (arg != NULL && arg[0] != '\0')
+		if (arg != NULL || arg[0] != '\0')
 		{
 			printf("%s", arg);
 			count++;
