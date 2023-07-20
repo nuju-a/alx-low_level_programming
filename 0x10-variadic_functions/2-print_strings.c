@@ -30,7 +30,7 @@ void print_strings(const char *seperator, const unsigned int n, ...)
 			printf("(nil)");
 			return;
 		}
-		/*if (arg != NULL || arg[0] != '\0')*/
+		if (arg != NULL || arg[0] != '\0')
 		printf("%s", arg);
 			count++;
 
