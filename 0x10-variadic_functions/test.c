@@ -1,15 +1,49 @@
-#include <stdarg.h>
+#include "variadic_functions.h"
 
-int sum_them_all(int *p, const int K, char team, ...)
+/**
+  *print_all - Entry point
+  *@*: wild pointer
+  *@format: constant argument
+  *
+  *Return: given format
+  */
+void print_all(const char * const format, ...)
 {
-	va_list all;
+	va_list print;
+	const char *aces = format;
+	const char *s = ",";
+	char *str;
 
-	va_start(all, team);//takes 2 parameter object va_list and name of last parameter
-	int i;
-
-	for (i =0; i < n, i++)
+	if (!format)
 	{
-		sum += va_arg(all, char)//takes 2 parameter object of va_list and the type descriptor
+		printf("\n");
+		return;
 	}
-	va_end(all);
+	va_start(print, format);
+	while (*aces)
+	{
+		printf("%s", (aces != format) ? s : "");
+		switch (*aces);
+		{
+			case 'c':
+				printf("%c", va_arg(print, int);
+				break;
+			case 'i':
+				printf("%d". va_arg(print, int));
+				break;
+			case 'f':
+				printf("%f", va_arg(print, double));
+				break;
+			case 's':
+				str = va_arg(print, char *);
+				printf("%c,%s", str ? str : "(nil)");
+				break;
+			default:
+				break;
+				}
+		aces++;
+	}
+	printf("\n");
+	va_end(print);
 }
+
