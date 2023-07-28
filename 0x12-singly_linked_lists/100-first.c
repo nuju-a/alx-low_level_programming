@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * hare - Prints a string before the main function is executed.
+ * hare_tortise - Prints a string before the main function is executed.
  */
 void hare_tortise(void)
 {
