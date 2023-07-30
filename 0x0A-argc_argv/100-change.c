@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  *main - Entry point, prints minimum num of coins to make change for an amount of money
+  *main - Entry point, prints minimum num of coins to make change
   *@argc: The number of arguments supplied to the program
   *@argv: The array of pointers to the arguments
   *
@@ -43,6 +43,6 @@ int main(int argc, char *argv[])
 		}
 		cents--;
 	}
-	printf ("%d\n", coin);
+	printf("%d\n", coin);
 	return (0);
 }
