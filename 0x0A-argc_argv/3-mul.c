@@ -1,29 +1,25 @@
 #include "main.h"
 
 /**
-  *main - Entry point
-  *@argc: argument count
-  *@argv: argument array
-  *
-  *Return: 0 0r 1
-  */
+ *main - Entry point
+ *@argc: argument count
+ *@argv: argument array
+ *
+ *Return: 0 0r 1
+ */
 int main(int argc, char *argv[])
 {
-	long int result = 1;
-	int i;
+	int result_mul, num1, num2;
 
-	if (argc > 1)
+	if (argc != 3)
 	{
-		for (i = 1; i < argc; i++)
-		{
-			result = result * atol(argv[i]);
-		}
-		printf("%ld\n", result);
+		printf("Error\n");
+		return (1);
 	}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
-		return (0);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	result_mul = num1 * num2;
+
+	printf("%d\n", result_mul);
+	return (0);
 }
