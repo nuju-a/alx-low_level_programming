@@ -27,15 +27,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = len2;
 	}
 	totallen = len1 + (n + 1);
-	result = malloc(totallen);
+	result = malloc(totallen * sizeof(char));
 
 	if (result == NULL)
 	{
 		return (NULL);
 	}
-	totallen = 0;
-	strcpy(result, s1);
-	strncat(result, s2, n);
+	if (s1 != NULL)
+	{
+		strcpy(result, s1);
+	}
+	if (s2 != NULL)
+	{
+		strncat(result, s2, n);
+	}
 	result[len1 + n] = '\0';
 
 	return (result);
