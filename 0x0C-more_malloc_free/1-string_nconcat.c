@@ -33,6 +33,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
+	totallen = 0;
 	strcpy(result, s1);
 	strncat(result, s2, n);
 	result[len1 + n] = '\0';
