@@ -4,24 +4,26 @@
   *string_nconcat - Concate function that appends src str to dest
   *@s1: The destination string
   *@s2: The source string
+  *@n: number of bytes of that the src can take
   *
   *Return: returns a pointer to strncat
   */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	size_t dest = strlen(s1);
-	size_t src = strlen(s2);
+	/*size_t src = strlen(s2);*/
 	size_t i;
 	char *result;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
 		return ("");
 	}
-	if (n >= src)
+	if (s2 == NULL)
 	{
-		n = src;
+		return (NULL);
 	}
+
 	result = malloc(sizeof(char) * (dest + n + 1));
 
 	if (result == NULL)
