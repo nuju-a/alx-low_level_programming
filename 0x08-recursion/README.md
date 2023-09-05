@@ -1,1 +1,0 @@
-This directory is focused on recursion; recursion is a way to self call a function with an attempt to  get closer to solution with each call until a base case is reached for which that function is terminated.

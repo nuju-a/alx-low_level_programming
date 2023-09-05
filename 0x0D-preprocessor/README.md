@@ -1,1 +1,0 @@
-This is a preprocessor directory, preprocessor is a step executed before the source code is complied, it can replace, insert contents in  a file and also suppress parts of a content, the -E is used to run only the preprocessor. preprocessor directive always start with the # sign. preprocessor are both predifined and user defined.
