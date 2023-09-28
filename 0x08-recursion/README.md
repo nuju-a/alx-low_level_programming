@@ -1,0 +1,1 @@
+recursive function are function that call themselves in a program loop. Recursions can easily become infinite loops when they are ran without a  base case(exit condition) for which loop is terminated; and this(loop) is usually an if statement.
