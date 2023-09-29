@@ -12,10 +12,10 @@ int _sqrt(int x, int y)
 	/*where y = root of a number and x is the number */
 	if (y * y == x)
 		return (y);
-	else if (y == 0)
+	else if (y == x / 2)
 		return (-1);
 	else
-		return (_sqrt(x, y - 1));
+		return (_sqrt(x, y + 1));
 }
 
 /**
@@ -26,10 +26,12 @@ int _sqrt(int x, int y)
  */
 int _sqrt_recursion(int n)
 {
+	int y = 0;
+
 	if (n < 0)
 		return (-1);
 	else if (n == 0 || n == 1)
 		return (n);
 	else
-		return (_sqrt(n, n));
+		return (_sqrt(n, y));
 }
