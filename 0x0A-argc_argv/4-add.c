@@ -1,5 +1,6 @@
 #include "main.h"
 
+int isdigit(int c);
 /**
  *main - Entry point
  *@argc: argument count

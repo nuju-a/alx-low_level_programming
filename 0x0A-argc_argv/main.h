@@ -6,5 +6,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 
+/*function helper*/
+int _isdigit(int c);
 
 #endif
