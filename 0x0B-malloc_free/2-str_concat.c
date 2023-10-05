@@ -24,8 +24,12 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	strcpy(p, s1);
-	strcat(p, s2);
+	if (s1 != NULL)
+		strcpy(p, s1);
+
+	if (s2 != NULL)
+		strcat(p, s2);
+
 	return (p);
 }
 
