@@ -12,10 +12,12 @@ char *str_concat(char *s1, char *s2)
 	char *p;
 	int index, concat = 0, len = 0;
 
-	if (s1 == NULL || s2 == NULL)
-	{
-		return (" ");
-	}
+	if (s1 == NULL)
+		s1 = "";
+
+	if (s2 == NULL)
+		S2 = "";
+
 	for (index = 0; s1[index] || s2[index]; index++)
 		len++;
 	p = malloc(len * sizeof(char));
