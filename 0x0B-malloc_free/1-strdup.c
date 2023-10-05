@@ -9,19 +9,23 @@
 char *_strdup(char *str)
 {
 	char *p;
-	size_t len = strlen(str);
+	int index;
+	int len = 0;
 
 	if (str == NULL)
-	{
 		return (NULL);
-	}
-	/*size_t len = strlen(str)*/
+
+	for (index = 0; str[index]; index++)
+		len++;
+
 	p = malloc((len + 1) * sizeof(char));
 
 	if (p == NULL)
-	{
 		return (NULL);
-	}
-	strcpy(p, str);
+	for (index = 0; str[index]; index++)
+		p[index] = str[index];
+
+	p[len] = '\0';
+
 	return (p);
 }
