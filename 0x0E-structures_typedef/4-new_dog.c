@@ -1,11 +1,12 @@
 #include "dog.h"
 
 /**
-  *newdog - Function that creates a new dog
+  *new_dog - Function that creates a new dog
   *@name: New dog name
   *@age: New dog age
   *@owner: New dog owner
   *
+  *Return: 0
   */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -17,7 +18,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	newdog = malloc(sizeof(struct dog));
 	if (newdog == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 	else
 	{
