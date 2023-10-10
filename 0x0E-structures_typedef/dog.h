@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 
-/*function prototype*/
+/*struct definition*/
 /**
   *struct dog - User defined
   *@name: Gives the name of the struct dog
@@ -21,4 +21,6 @@ struct dog
 	char *owner;
 };
 
+/*function prototype*/
+void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif /*MAIN_H*/
