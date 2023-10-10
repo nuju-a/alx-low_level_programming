@@ -9,17 +9,22 @@
   */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new_dog = malloc(sizeof(struct dog));
-	if (new_dog == NULL)
+	dog_t *newdog;
+
+	if (name == NULL || age < 0 || owner == NULL)
+		return (NULL);
+
+	newdog = malloc(sizeof(struct dog));
+	if (newdog == NULL)
 	{
-		printf("NULL");
-		return (0);
+		return(NULL);
 	}
 	else
 	{
-		new_dog->name = strdup(name);
-		new_dog->age = age;
-		new_dog->owner = strdup(owner);
-		return (new_dog);
+		newdog->name = strdup(name);
+		newdog->age = age;
+		newdog->owner = strdup(owner);
+		return (newdog);
 	}
+	free(newdog);
 }
