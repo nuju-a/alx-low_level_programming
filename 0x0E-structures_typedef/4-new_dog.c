@@ -15,17 +15,16 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (name == NULL || age < 0 || owner == NULL)
 		return (NULL);
 
-	newdog = malloc(sizeof(struct dog));
+	newdog = malloc(sizeof(dog_t));
 	if (newdog == NULL)
 	{
 		return (NULL);
 	}
-	else
-	{
-		newdog->name = strdup(name);
-		newdog->age = age;
-		newdog->owner = strdup(owner);
-		return (newdog);
-	}
-	free(newdog);
+
+	newdog->name = strdup(name);
+	newdog->age = age;
+	newdog->owner = strdup(owner);
+
+	return (newdog);
+
 }
