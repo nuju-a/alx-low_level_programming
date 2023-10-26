@@ -25,8 +25,8 @@ unsigned int binary_to_uint(const char *b)
 	}
 	for (i = 0; i < len; i++)
 	{
-		if (b[len - 1 - i] == '1')
-			sum += (b[len - 1 - i] - '0') * mult;
+		/*if (b[len - 1 - i] == '1')*/
+		sum += (b[len - 1 - i] - '0') * mult;
 
 		mult *= 2;
 	}
