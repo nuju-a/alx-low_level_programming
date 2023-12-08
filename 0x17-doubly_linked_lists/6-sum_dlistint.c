@@ -1,4 +1,4 @@
-#inlcude "lists.h"
+#include "lists.h"
 
 /**
   *sum_dlistint - funct returns sum of all data in list
