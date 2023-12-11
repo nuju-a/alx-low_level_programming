@@ -1,0 +1,1 @@
+This is a study of dynamic library. which allows for greater re-usability of code block witout recompilation as with static lib because it only takes object code and the adress code of the executable file to be processd during runtime.
