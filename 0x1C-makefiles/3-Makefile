@@ -8,8 +8,8 @@ all: $(OBJ)
 oclean:
 	$(RM) $(OBJ)
 clean:
-	$(MAKE) oclean *~
+	$(RM) $(NAME) *~
 fclean: clean
-	$(RM) $(NAME)
+	$(MAKE) oclean
 re:
-	$(MAKE) fclean $(MAKE) all
+	$(MAKE) oclean $(MAKE) all
