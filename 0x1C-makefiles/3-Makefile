@@ -1,0 +1,15 @@
+CC=gcc
+SRC=main.c school.c
+OBJ=$(patsubst %.c, %.o, $(SRC))
+NAME=school
+RM= rm -f
+all: $(OBJ)
+	$(CC) $(SRC) -o $(NAME)
+oclean:
+	$(RM) $(OBJ)
+clean:
+	$(MAKE) oclean *~
+fclean: clean
+	$(RM) $(NAME)
+re:
+	$(MAKE) fclean $(MAKE) all
